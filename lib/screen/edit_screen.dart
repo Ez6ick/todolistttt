@@ -28,7 +28,7 @@ class _Edit_ScreenState extends State<Edit_Screen> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: backgroundColors,
+      backgroundColor: Color.fromARGB(255, 247, 198, 155),
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -52,7 +52,7 @@ class _Edit_ScreenState extends State<Edit_Screen> {
       children: [
         ElevatedButton(
           style: ElevatedButton.styleFrom(
-            primary: custom_green,
+            primary: Color.fromARGB(255, 47, 206, 246),
             minimumSize: Size(170, 48),
           ),
           onPressed: () {
@@ -60,7 +60,7 @@ class _Edit_ScreenState extends State<Edit_Screen> {
                 widget._note.id, indexx, title!.text, subtitle!.text);
             Navigator.pop(context);
           },
-          child: Text('add task'),
+          child: Text('Update',style:TextStyle(fontWeight:FontWeight.w500,fontSize:20 ,color:const Color.fromARGB(255, 0, 0, 0))),
         ),
         ElevatedButton(
           style: ElevatedButton.styleFrom(
@@ -70,7 +70,7 @@ class _Edit_ScreenState extends State<Edit_Screen> {
           onPressed: () {
             Navigator.pop(context);
           },
-          child: Text('Cancel'),
+          child: Text('Cancel',style:TextStyle(fontWeight:FontWeight.w500,fontSize:20 ,color:const Color.fromARGB(255, 0, 0, 0))),
         ),
       ],
     );
@@ -80,7 +80,7 @@ class _Edit_ScreenState extends State<Edit_Screen> {
     return Container(
       height: 180,
       child: ListView.builder(
-        itemCount: 4,
+        itemCount: 11,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
           return GestureDetector(

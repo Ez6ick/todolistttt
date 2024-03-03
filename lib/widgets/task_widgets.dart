@@ -97,7 +97,7 @@ class _Task_WidgetState extends State<Task_Widget> {
             width: 90,
             height: 28,
             decoration: BoxDecoration(
-              color: custom_green,
+              color: Color.fromARGB(255, 250, 235, 138),
               borderRadius: BorderRadius.circular(18),
             ),
             child: Padding(
@@ -107,12 +107,12 @@ class _Task_WidgetState extends State<Task_Widget> {
               ),
               child: Row(
                 children: [
-                  Image.asset('images/icon_time.png'),
+                  Image.asset('images/clock.png'),
                   SizedBox(width: 10),
                   Text(
                     widget._note.time,
                     style: TextStyle(
-                      color: Colors.white,
+                      color: const Color.fromARGB(255, 0, 0, 0),
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
                     ),
@@ -132,7 +132,7 @@ class _Task_WidgetState extends State<Task_Widget> {
               width: 90,
               height: 28,
               decoration: BoxDecoration(
-                color: Color(0xffE2F6F1),
+                color: Color.fromARGB(255, 133, 244, 254),
                 borderRadius: BorderRadius.circular(18),
               ),
               child: Padding(
@@ -142,13 +142,15 @@ class _Task_WidgetState extends State<Task_Widget> {
                 ),
                 child: Row(
                   children: [
-                    Image.asset('images/icon_edit.png'),
+                    Image.asset('images/edit.png'),
+                    
                     SizedBox(width: 10),
                     Text(
                       'edit',
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.bold,
+                        
                       ),
                     ),
                   ],

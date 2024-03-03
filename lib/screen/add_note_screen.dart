@@ -20,7 +20,7 @@ class _Add_creenState extends State<Add_creen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: backgroundColors,
+      backgroundColor: Color.fromARGB(255, 247, 198, 155),
       body: SafeArea(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -44,14 +44,14 @@ class _Add_creenState extends State<Add_creen> {
       children: [
         ElevatedButton(
           style: ElevatedButton.styleFrom(
-            primary: custom_green,
+            primary: Color.fromARGB(255, 24, 244, 68),
             minimumSize: Size(170, 48),
           ),
           onPressed: () {
             Firestore_Datasource().AddNote(subtitle.text, title.text, indexx);
             Navigator.pop(context);
           },
-          child: Text('add task'),
+          child: Text('Add task' ,style:TextStyle(fontWeight:FontWeight.w500,fontSize:20 ,color:const Color.fromARGB(255, 0, 0, 0)) ),
         ),
         ElevatedButton(
           style: ElevatedButton.styleFrom(
@@ -61,7 +61,7 @@ class _Add_creenState extends State<Add_creen> {
           onPressed: () {
             Navigator.pop(context);
           },
-          child: Text('Cancel'),
+          child: Text('Cancel',style:TextStyle(fontWeight:FontWeight.w500,fontSize:20 ,color:const Color.fromARGB(255, 0, 0, 0)) ),
         ),
       ],
     );
@@ -71,7 +71,7 @@ class _Add_creenState extends State<Add_creen> {
     return Container(
       height: 180,
       child: ListView.builder(
-        itemCount: 4,
+        itemCount:11 ,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
           return GestureDetector(

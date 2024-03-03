@@ -17,7 +17,7 @@ class _Home_ScreenState extends State<Home_Screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: backgroundColors,
+      backgroundColor: Color.fromARGB(255, 247, 198, 155),
       floatingActionButton: Visibility(
         visible: show,
         child: FloatingActionButton(
@@ -26,8 +26,8 @@ class _Home_ScreenState extends State<Home_Screen> {
               builder: (context) => Add_creen(),
             ));
           },
-          backgroundColor: custom_green,
-          child: Icon(Icons.add, size: 30),
+          backgroundColor:Color.fromARGB(255, 255, 255, 255),
+          child: Icon(Icons.add, size: 30  ),
         ),
       ),
       body: SafeArea(
@@ -52,7 +52,7 @@ class _Home_ScreenState extends State<Home_Screen> {
                 'isDone',
                 style: TextStyle(
                     fontSize: 16,
-                    color: Colors.grey.shade500,
+                    color: const Color.fromARGB(255, 0, 0, 0),
                     fontWeight: FontWeight.bold),
               ),
               Stream_note(true),
